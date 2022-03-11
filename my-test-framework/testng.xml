@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="browser" value="Chrome"/>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/dhru.mishra/IdeaProjects/my-test-framework">
+        <parameter name="footerColumnHeader" value="Let Us Help You"/>
+        <parameter name="footerNavLinks"
+                   value="COVID-19 and Amazon,Your Account,Returns Centre,100% Purchase Protection,Amazon App Download,Amazon Assistant Download,Help"/>
+        <classes>
+            <class name="com.amazontest.pagefactory.AmazonTest">
+                <methods>
+                    <include name="printPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
